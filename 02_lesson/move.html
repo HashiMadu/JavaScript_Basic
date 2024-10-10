@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_3</title>
+</head>
+
+<body>
+    <div>
+        <button id="left">←</button>
+        <button id="center">■</button>
+        <button id="right">→</button>
+    </div>
+
+    <img id="monster" src="https://pbs.twimg.com/media/EXae-7lWkAANYU6.png" alt="">
+
+    <script>
+        let num = 0;
+
+        const monster = document.getElementById('monster');
+
+
+        const leftBtn = document.getElementById('left');
+        leftBtn.addEventListener('click', function () {
+            num += 1;
+            monster.style.transform = `translateX(${num -= 5}px)`;
+            console.log(num);
+        });
+
+
+        const rightBtn = document.getElementById('right');
+        rightBtn.addEventListener('click', function () {
+            num += 1;
+            monster.style.transform = `translateX(${num += 5}px)`;
+            console.log(num);
+        });
+
+        const centerBtn = document.getElementById('center');
+        centerBtn.addEventListener('click', function () {
+
+            monster.style.transform = `translateX(${num = 0}px)`;
+            console.log(num);
+        });
+
+
+
+
+    </script>
+
+</body>
+
+</html>

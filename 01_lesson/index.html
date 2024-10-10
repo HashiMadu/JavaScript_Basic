@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript basic
+
+    </title>
+</head>
+
+<body>
+    <h1 id="topic">hello js</h1>
+    <p id="elem">変化させたい要素</p>
+    <img id="imageElem" src="https://picsum.photos/200/300?image=0">
+
+
+
+    <script>
+        const imageElem = document.getElementById('imageElem');
+        // let src = imageElem.getAttribute('src');
+        // console.log(src);
+        // imageElem.setAttribute('src', 'https://picsum.photos/200/300?image=100');
+
+
+        const p = document.getElementById('elem');
+        p.addEventListener('mouseover', function () {
+
+            imageElem.setAttribute('src', 'https://picsum.photos/200/300?image=100');
+        });
+
+
+
+        p.addEventListener('mouseout', function () {
+
+            imageElem.setAttribute('src', 'https://picsum.photos/200/300?image=0');
+        });
+
+
+
+
+
+
+
+    </script>
+    <!--
+        // document.getElementById('elem').style.color = "#ff0000";
+
+        // document.getElementById('elem').style.backgroundColor = "#0000ff";
+
+
+        // let elem = document.getElementById('elem');
+        // elem.style.color = '#ff0000';
+        // elem.style.backgroundColor = "#0000ff";
+
+
+        // const elem = document.getElementById('elem');
+        // console.log('elem');
+
+
+        // elem.style.color = '#ff0000';
+        // elem.style.backgroundColor = "#0000ff";
+
+        // const topic = document.getElementById('topic');
+        // console.log('topic');
+        // topic.style.color = '#ff0000';
+        // topic.style.fontSize = '50px';
+
+
+
+
+        // const elem = document.getElementById('elem');
+        // console.log('elem');
+        // elem.addEventListener('click', function () {
+        //     elem.style.color = '#ff0000';
+        //     elem.style.backgroundColor = "#0000ff";
+
+        // });
+
+
+
+
+
+        // const topic = document.getElementById('topic');
+        // console.log('topic');
+        // topic.addEventListener('click', funtion(){
+
+        //     topic.style.color = '#ff0000';
+        //     topic.style.fontSize = '50px';
+        // });
+
+
+        // const elem = document.getElementById('elem');
+        // console.log('elem');
+
+        // elem.addEventListener('mouseover', function () {
+        //     elem.style.fontSize = '30px';
+        //     // topic.styel.fontSize = '32px';
+        // });
+
+        // elem.addEventListener('mouseout', function () {
+        //     elem.style.fontSize = '16px';
+        //     // topic.styel.fontSize = '100px';
+
+        // });
+
+
+
+
+        // const topic = document.getElementById('topic');
+        // console.log('topic');
+        // topic.style.color = '#ff0000';
+        // topic.style.fontSize = '50px';
+
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
